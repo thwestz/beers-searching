@@ -21,15 +21,17 @@
       <h4 class="card-title">ค้นหาชื่อเบียร์</h4>
       <div class="row">
         <div class="col-6">
-                <input type="text" id = "beer-name" class="form-control" placeholder="เช่น Buzz , Trashy "> <br>
-                <input type="text" id = "beer-yeast" class="form-control" placeholder="เช่น American , Ale"><br>
-                <br>
-                <button onclick="toSearch(document.getElementById('beer-name').value,document.getElementById('beer-yeast').value)" class="btn btn-primary">Search</button>
-                
+          <label>Name :</label>
+          <input type="text" id="beer-name" class="form-control" placeholder="เช่น Buzz , Trashy "> <br>
+          <label>Yeast :</label>
+          <input type="text" id="beer-yeast" class="form-control" placeholder="เช่น American , Ale"><br>
+          <br>
+          <button onclick="toSearch(document.getElementById('beer-name').value,document.getElementById('beer-yeast').value)" class="btn btn-primary">Search</button>
+
         </div>
-       </div>
+      </div>
       <br>
-      <p id ="result"></p>
+      <p id="result"></p>
     </div>
 
     <!-- Optional JavaScript -->
