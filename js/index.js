@@ -21,7 +21,6 @@ const getBeerAPI = (name) => fetch(`https://api.punkapi.com/v2/beers/?beer_name=
     .then(response => {
         let beers = response;
         let result = "";
-        console.log(beers)
         for (let i = 0; i < beers.length; i++) {
 
             result += "<b>Name :</b>" + beers[i].name +
